@@ -1,7 +1,7 @@
 import { DataContext } from "./data";
-import { useContext,useRef } from "react";
+import { useContext, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import Margarita from "../components/assets/images/margarita-cocktail.jpg";
 import Martini from "../components/assets/images/martini.webp";
 import Rum from "../components/assets/images/Rum.jpg";
@@ -25,12 +25,12 @@ function Categories() {
   return (
     <div className="min-h-screen">
       <div className="min-h-screen w-full bg-black grid esm:grid-cols-2 esm:gap-2 md:grid-cols-3 md:gap-4 esm:p-5 md:p-6">
-        <motion.div 
-       
-        whileInView={{opacity:1,scale:1}}
-        initial={{scale:0.3, opacity:0}}
-        transition={{duration:0.40}}
-        className=" overflow-hidden relative col-span-2">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.3, opacity: 0 }}
+          transition={{ duration: 0.4 }}
+          className=" overflow-hidden relative col-span-2"
+        >
           <p className="text-3xl text-white absolute bottom-4 left-2">
             Margarita
           </p>
@@ -56,7 +56,9 @@ function Categories() {
                   setLinkInfo((prev) => {
                     const newInfo = { ...prev, drinkName: "Margarita" };
                     if (newInfo && newInfo.drinkName === "Margarita") {
-                      refetch();
+                      setTimeout(() => {
+                        refetch();
+                      }, 10);
                     }
                     return newInfo;
                   });
@@ -68,11 +70,12 @@ function Categories() {
             </div>
           </div>
         </motion.div>
-        <motion.div 
-           whileInView={{opacity:1,scale:1}}
-        initial={{scale:0.3, opacity:0}}
-        transition={{duration:0.5}}
-        className=" overflow-hidden relative">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.3, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className=" overflow-hidden relative"
+        >
           <p className="text-3xl text-white absolute bottom-4 left-2">
             Martini
           </p>
@@ -98,7 +101,9 @@ function Categories() {
                   setLinkInfo((prev) => {
                     const newInfo = { ...prev, drinkName: "Martini" };
                     if (newInfo && newInfo.drinkName === "Martini") {
-                      refetch();
+                      setTimeout(() => {
+                        refetch();
+                      }, 10);
                     }
                     return newInfo;
                   });
@@ -111,11 +116,12 @@ function Categories() {
           </div>
         </motion.div>
 
-        <motion.div 
-           whileInView={{opacity:1,scale:1}}
-        initial={{scale:0.3, opacity:0}}
-        transition={{duration:0.6}}
-        className=" overflow-hidden relative">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.3, opacity: 0 }}
+          transition={{ duration: 0.6 }}
+          className=" overflow-hidden relative"
+        >
           <p className="text-3xl text-white absolute bottom-4 left-2">Vodka</p>
           <div className="h-full w-full group">
             <div
@@ -139,7 +145,9 @@ function Categories() {
                   setLinkInfo((prev) => {
                     const newInfo = { ...prev, drinkName: "Vodka" };
                     if (newInfo && newInfo.drinkName === "Vodka") {
-                      refetch();
+                      setTimeout(() => {
+                        refetch();
+                      }, 10);
                     }
                     return newInfo;
                   });
@@ -152,11 +160,12 @@ function Categories() {
           </div>
         </motion.div>
 
-        <motion.div 
-           whileInView={{opacity:1,scale:1}}
-        initial={{scale:0.3, opacity:0}}
-        transition={{duration:0.7}}
-        className=" overflow-hidden relative">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.3, opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          className=" overflow-hidden relative"
+        >
           <p className="text-3xl text-white absolute bottom-4 left-2">Gin</p>
           <div className="h-full w-full group">
             <div
@@ -180,7 +189,9 @@ function Categories() {
                   setLinkInfo((prev) => {
                     const newInfo = { ...prev, drinkName: "Gin" };
                     if (newInfo && newInfo.drinkName === "Gin") {
-                      refetch();
+                      setTimeout(() => {
+                        refetch();
+                      }, 10);
                     }
                     return newInfo;
                   });
@@ -193,11 +204,12 @@ function Categories() {
           </div>
         </motion.div>
 
-        <motion.div 
-           whileInView={{opacity:1,scale:1}}
-        initial={{scale:0.3, opacity:0}}
-        transition={{duration:0.8}}
-        className=" overflow-hidden relative">
+        <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.3, opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className=" overflow-hidden relative"
+        >
           <p className="text-3xl text-white absolute bottom-4 left-2">Rum</p>
           <div className="h-full w-full group">
             <div
@@ -221,7 +233,9 @@ function Categories() {
                   setLinkInfo((prev) => {
                     const newInfo = { ...prev, drinkName: "Rum" };
                     if (newInfo && newInfo.drinkName === "Rum") {
-                      refetch();
+                      setTimeout(() => {
+                        refetch();
+                      }, 10);
                     }
                     return newInfo;
                   });
