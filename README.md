@@ -1,4 +1,4 @@
-![image](https://github.com/Taherpatrawala/DrinkLy/assets/109360109/35ec2b5c-6dc9-4254-835f-e85c9042e8a6)# DrinkLy
+# DrinkLy
 An React application to find data about various alcoholic drinks...
 
 
