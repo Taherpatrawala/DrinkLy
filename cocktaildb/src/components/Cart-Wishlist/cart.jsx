@@ -79,8 +79,14 @@ let Cart = () => {
           );
         })}
       </div>
-      <div className="fixed bottom-0 z-10 h-10v w-full bg-white">
+      <div className="flex justify-evenly fixed bottom-0 z-10 h-10v w-full bg-white">
         <p className="text-3xl text-center">Total: ${totalFinal}</p>
+        <button
+          id="button"
+          className="border-2 border-black px-2 py-0 h-[70%] mt-2 hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
+        >
+          Check Out
+        </button>
       </div>
       <Toaster />
     </div>
