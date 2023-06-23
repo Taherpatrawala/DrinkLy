@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useContext } from "react";
-import { userDataContext } from "./userData/userData";
+import { userDataContext } from "../userData/userData";
 import toast, { Toaster } from "react-hot-toast";
 
 let Card = (props) => {
@@ -69,7 +69,7 @@ let Card = (props) => {
       name: props.daata.strDrink,
       image: props.daata.strDrinkThumb,
       id: props.daata.idDrink * 2,
-      price:Math.floor(Math.random()*10)+0.99 //this is done to make the id unique because the id of the drink in cart and wishlist is same
+      price: Math.floor(Math.random() * 10) + 0.99, //this is done to make the id unique because the id of the drink in cart and wishlist is same
     };
     let isAddedToCart =
       cartData?.filter((drink) => drink.name === props.daata.strDrink).length >

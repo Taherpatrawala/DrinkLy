@@ -2,12 +2,12 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import { DataProvider } from "./components/data";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Search from "./components/search";
-import CardDetails from "./components/cardDetails";
+import CardDetails from "./components/card/cardDetails";
 import { UserDataProvider } from "./components/userData/userData";
-import Cart from "./components/cart";
-import Wishtlist from "./components/Wishlist";
+import Cart from "./components/Cart-Wishlist/cart";
+import Wishtlist from "./components/Cart-Wishlist/Wishlist";
 import AboutUs from "./components/AboutUs";
 
 function App() {

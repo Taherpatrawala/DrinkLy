@@ -1,5 +1,5 @@
 import video from "/src/components/assets/video/video.mp4";
-import HeroCardsContainer from "./heroCardsContainer";
+import HeroCardsContainer from "./Hero cards/heroCardsContainer";
 import Categories from "./categories";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";

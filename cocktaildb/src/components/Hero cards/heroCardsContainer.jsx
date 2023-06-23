@@ -1,5 +1,5 @@
-import { DataContext } from "./data";
-import { useContext,useEffect,useState } from "react";
+import { DataContext } from "../data";
+import { useContext, useEffect, useState } from "react";
 import HeroCard from "./heroCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -25,23 +25,16 @@ function HeroCardsContainer() {
     setLinkInfo,
   ] = useContext(DataContext);
 
-  let [slidesPerView,setSlidesPerView]=useState(3)
+  let [slidesPerView, setSlidesPerView] = useState(3);
 
-
-
-useEffect(()=>{
-
-  let windowWidth=window.innerWidth
-  if(windowWidth<600){
-    return setSlidesPerView(1)
-   }
-   else if(windowWidth>=600 && windowWidth<1024){
-    return setSlidesPerView(2)
-   }
-},[])
-
- 
-
+  useEffect(() => {
+    let windowWidth = window.innerWidth;
+    if (windowWidth < 600) {
+      return setSlidesPerView(1);
+    } else if (windowWidth >= 600 && windowWidth < 1024) {
+      return setSlidesPerView(2);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-black">

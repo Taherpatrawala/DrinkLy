@@ -1,6 +1,6 @@
 import { DataContext } from "./data";
 import { useContext } from "react";
-import Card from "./card";
+import Card from "./card/card";
 
 function Search() {
   let [
@@ -25,8 +25,6 @@ function Search() {
       return refetch();
     }
   });
-
-
 
   if (isLoading || isFetching)
     return (

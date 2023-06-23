@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { userDataContext } from "./userData/userData";
+import { userDataContext } from "../userData/userData";
 import { useContext } from "react";
 import MNavbar from "./MNavbar";
 
@@ -110,8 +110,8 @@ function Navbar(props) {
               setWidth((prev) => !prev);
               let body = document.querySelector("body");
               body.classList.toggle("overflow-hidden");
-              let logo=document.getElementById("logo")
-              logo.classList.toggle("esm:-z-20")
+              let logo = document.getElementById("logo");
+              logo.classList.toggle("esm:-z-20");
             }}
             className="z-50"
           >

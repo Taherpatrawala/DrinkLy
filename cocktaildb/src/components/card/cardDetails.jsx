@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DataContext } from "./data";
+import { DataContext } from "../data";
 import { useParams } from "react-router";
 
 let CardDetails = () => {
