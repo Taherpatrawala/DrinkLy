@@ -10,13 +10,11 @@ First, clone the repo using the command
 ```sh
 git clone https://github.com/Taherpatrawala/DrinkLy.git
 
-npm install
-npm run dev
 ```
 
 Enter the root directory
 ```sh
-npm run dev
+cd DrinkLy
 ```
 Install all the required dependencies
 ```sh
