@@ -15,7 +15,7 @@ function App() {
   console.log(pathname);
 
   return (
-    <div className="App">
+    <div className="App overflow-clip">
       <DataProvider>
         <UserDataProvider>
           <BrowserRouter>
