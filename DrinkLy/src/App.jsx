@@ -15,13 +15,15 @@ function App() {
   console.log(pathname);
 
   return (
-    <div className="App overflow-clip">
+    <div className="App ">
       <DataProvider>
         <UserDataProvider>
           <BrowserRouter>
             <div
               className={`${
-                pathname == "/" ? "absolute " : "relative bg-black m-0"
+                pathname == "/"
+                  ? "absolute w-[98.72vw]"
+                  : "relative bg-black m-0"
               } ${pathname == "/popular/:id" ? "hidden" : "block"} text-white`}
             >
               <Navbar setPath={setPathname} />

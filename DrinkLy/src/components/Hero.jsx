@@ -40,7 +40,7 @@ function Hero() {
   return (
     <div>
       <section id="hero">
-        <div className="min-h-screen w-[100vw] absolute">
+        <div className="min-h-screen w-full absolute overflow-clip">
           <div className=" z-30  absolute h-100v w-full flex justify-center items-center">
             <motion.div
               whileInView={{ opacity: 1, y: 1 }}
@@ -88,7 +88,7 @@ function Hero() {
             autoPlay
             loop
             muted
-            className="object-cover h-100v w-[100vw] object-center"
+            className="object-cover h-100v w-[100vw] object-center overflow-hidden"
           />
         </div>
         <div className="text-7xl min-h-screen bg-black z-50"></div>

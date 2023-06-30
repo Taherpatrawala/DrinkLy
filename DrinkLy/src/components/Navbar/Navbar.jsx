@@ -17,12 +17,12 @@ function Navbar(props) {
   let [cartData, wishlistData, cartLength] = useContext(userDataContext);
 
   return (
-    <div className="w-100v z-50 bg-transparent sticky top-0 transition-all duration-700">
+    <div className="w-full overflow-clip z-50 bg-transparent sticky top-0 transition-all duration-700 mr-0">
       <div className="md:hidden">
         <MNavbar width={width} />
       </div>
-      <div className="flex justify-between p-3   items-center bg-transparent">
-        <NavLink to="/" className="mx-3" id="logo">
+      <div className="flex justify-between p-3 pr-0  w-full items-center bg-transparent">
+        <NavLink to="/" className="mx-3 mr-0" id="logo">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"

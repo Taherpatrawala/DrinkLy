@@ -37,7 +37,7 @@ function HeroCardsContainer() {
   }, []);
 
   return (
-    <div className="min-h-screen w-[100vw] flex justify-center items-center bg-black">
+    <div className="min-h-screen w-full flex justify-center items-center bg-black">
       <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
