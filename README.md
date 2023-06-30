@@ -24,8 +24,8 @@ Run the project locally
 ```sh
 npm run dev
 ```
-#Features:
--Search for any alcoholic drink you'd like
--Data regarding the Drink will be displayed
--Add the drink to your wishlist or cart
--Your Wishlist/Cart data will be saved in your browser
+## Features 🌟
+- Search for any alcoholic drink you'd like.
+- Data regarding the Drink will be displayed.
+- Add the drink to your wishlist or cart.
+- Your Wishlist/Cart data will be saved in your browser.
