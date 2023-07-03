@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { userDataContext } from "../userData/userData";
 import { useContext } from "react";
-import MNavbar from "./MNavbar";
+import MNavbar from "../Navbar/MNavbar";
 
 function Navbar(props) {
   let locationData = useLocation();
@@ -17,7 +17,7 @@ function Navbar(props) {
   let [cartData, wishlistData, cartLength] = useContext(userDataContext);
 
   return (
-    <div className="w-full overflow-clip z-50 bg-transparent sticky top-0 transition-all duration-700 mr-0">
+    <div className="w-full  z-50 bg-transparent sticky top-0 transition-all duration-700 mr-0">
       <div className="md:hidden">
         <MNavbar width={width} />
       </div>
