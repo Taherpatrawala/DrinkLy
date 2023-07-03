@@ -18,7 +18,6 @@ export let DataProvider = (props) => {
         linkInfo.variable
       }=${linkInfo.drinkName}`
     );
-    //response = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=lassi`)
 
     return response.data;
   }
