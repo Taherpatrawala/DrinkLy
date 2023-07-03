@@ -14,9 +14,7 @@ export let DataProvider = (props) => {
   async function getData() {
     let response;
     response = await axios.get(
-      `${import.meta.env.VITE_API_LINK}/${linkInfo.query}.php?${
-        linkInfo.variable
-      }=${linkInfo.drinkName}`
+      `https://www.thecocktaildb.com/api/json/v1/1/${linkInfo.query}.php?${linkInfo.variable}=${linkInfo.drinkName}`
     );
 
     return response.data;
