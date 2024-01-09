@@ -56,8 +56,8 @@ let CardDetails = () => {
                   {drink.strInstructions}
                 </p>
               </div>
-              <div className="flex flex-col">
-                <p>Ingredients:</p>
+              <div className="flex flex-col items-center">
+                <p className="text-yellow-400">Ingredients:</p>
                 {ingredients.map((ingredient) => (
                   <p>{ingredient}</p>
                 ))}

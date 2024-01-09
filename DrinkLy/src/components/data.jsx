@@ -7,7 +7,7 @@ export const DataContext = createContext();
 export let DataProvider = (props) => {
   let [linkInfo, setLinkInfo] = useState({
     query: "search",
-    drinkName: "Cocktail",
+    drinkName: "Vodka",
     variable: "s",
   });
 

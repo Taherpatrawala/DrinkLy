@@ -113,9 +113,11 @@ function Navbar(props) {
               let logo = document.getElementById("logo");
               logo.classList.toggle("esm:-z-20");
             }}
-            className="z-50"
+            className={`z-50 text-2xl ${
+              width ? "rotate-90" : null
+            } transition-all`}
           >
-            X
+            &#9776;
           </p>
         </div>
       </div>
